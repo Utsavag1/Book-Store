@@ -48,17 +48,10 @@ nav li a:hover{
     padding-top: 104px;
     background-color: rgb(226, 253, 253);
 }
-@media only screen and (max-width:800px){
-    #Intro{
-        display: block;
-    }
-    .intro_img{
-        margin-top: 15px;
-    }
-}
+
 .intro_img img{
-    height: 480px;
-    width: 480px;
+    height: 90vh;
+    width: 40vw;
     /* position: relative; */
 }
 .intro_name h1{
@@ -89,6 +82,28 @@ nav li a:hover{
 .intro_name a:hover{
     color: red;
 }
+@media only screen and (max-width:800px){
+    #Intro{
+        display: block;
+    }
+    .intro_img{
+        margin-top: 15px;
+    }
+    .intro_img img{
+        height: 80vh;
+        width: 100vw;
+    }
+}
+@media only screen and (max-width:420px){
+    .intro_name h1{
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width:390px){
+    .intro_name h1{
+        padding-top: 60px;
+    }
+}
 /* #BestSelling{
     width: 100%;
     height: 110vh;
@@ -114,7 +129,7 @@ nav li a:hover{
 }
 .book_card{
     width: 220px;
-    height: 365px;
+    height: 370px;
     text-align: center;
     padding: 5px;
     border: 2px solid black;
@@ -159,13 +174,13 @@ nav li a:hover{
 } */
 #Recommendations h1{
     text-align: center;
-    font-size: 45px;
+    font-size: 2.8rem;
     padding: 20px 0px;
 }
 #Recommendations h3{
     text-align: center;
     color: #089da1;
-    font-size: 22px;
+    font-size: x-large;
 }
 .search_bar{
     display: flex;
@@ -198,18 +213,24 @@ nav li a:hover{
 }
 .review_box{
     width: 95%;
-    height: auto;
+    height: 450px;
     margin: 15px auto;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
 }
+
 .review_card{
-    width: 400px;
-    height: auto;
+    width: 310px;
+    height: 270px;
     box-shadow: 0 0 8px #089da1;
     padding: 15px;
     margin: 0 12px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .review_card img{
     width: 80px;
@@ -222,12 +243,22 @@ nav li a:hover{
     text-align: justify;
     line-height: 20px;
 }
+/* @media only screen and (max-width:800px){
+    .review_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .review_card{
+        width: 250px;
+    }
+} */
 .forms h2{
     text-align: center;
     font-size: xx-large;
 }
 .forms {
     max-width: 400px;
+    width: 90vw;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -276,15 +307,16 @@ footer{
     text-align: center;
     font-size: large;
     height: 10vh;
-    padding-top: 3vh;
+    padding: 4vh 0;
     color: white;
     box-sizing: border-box;
 }
 .social-icons{
-    height: 50px;
+    /* height: 50px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 .social-icons a{
     text-decoration: none;
