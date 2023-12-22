@@ -129,7 +129,7 @@ nav li a:hover{
 }
 .book_card{
     width: 220px;
-    height: 370px;
+    height: 390px;
     text-align: center;
     padding: 5px;
     border: 2px solid black;
@@ -225,7 +225,7 @@ nav li a:hover{
 
 .review_card{
     width: 310px;
-    height: 270px;
+    height: 290px;
     box-shadow: 0 0 8px #089da1;
     padding: 15px;
     margin: 0 12px;
